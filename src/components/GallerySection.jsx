@@ -109,7 +109,7 @@ export default function GallerySection() {
               className={i === 0 ? 'col-span-2' : ''}
               style={{
                 background: '#fff',
-                padding: '8px 8px 36px',
+                padding: '8px',
                 boxShadow: '2px 4px 16px rgba(0,0,0,0.13)',
                 transform: `rotate(${p.rotate})`,
                 lineHeight: 0,
@@ -128,19 +128,6 @@ export default function GallerySection() {
                 loading="lazy"
                 draggable={false}
               />
-              <p
-                style={{
-                  fontFamily: "'Dancing Script', cursive",
-                  fontSize: i === 0 ? '0.95rem' : '0.78rem',
-                  color: '#be185d',
-                  textAlign: 'center',
-                  lineHeight: 1,
-                  paddingTop: '10px',
-                  letterSpacing: '0.02em',
-                }}
-              >
-                {p.alt}
-              </p>
             </div>
           ))}
         </div>
