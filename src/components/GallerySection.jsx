@@ -118,7 +118,13 @@ export default function GallerySection() {
               <img
                 src={p.src}
                 alt={p.alt}
-                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                style={{
+                  width: '100%',
+                  height: i === 0 ? '220px' : '140px',
+                  display: 'block',
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }}
                 loading="lazy"
                 draggable={false}
               />
