@@ -97,7 +97,7 @@ export default function HeroSection() {
       />
 
       {/* ── Main content ── */}
-      <div className="relative max-w-6xl mx-auto px-8 md:px-14 lg:px-20 min-h-screen flex flex-col justify-center pt-24 pb-20">
+      <div className="relative max-w-6xl mx-auto px-6 md:px-14 lg:px-20 min-h-screen flex flex-col justify-center pt-20 md:pt-24 pb-16 md:pb-20">
 
         {/* Small label */}
         <p
@@ -117,9 +117,9 @@ export default function HeroSection() {
           </span>
 
           <h1
-            className="font-dancing font-bold gradient-title animate-fade-in-up leading-none"
+            className="font-dancing font-bold gradient-title animate-fade-in-up leading-tight"
             style={{
-              fontSize: 'clamp(3rem, 11vw, 7.5rem)',
+              fontSize: 'clamp(2.4rem, 11vw, 7.5rem)',
               animationDelay: '0.32s',
             }}
           >
@@ -165,7 +165,7 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p
-          className="font-playfair italic text-lg md:text-xl lg:text-2xl max-w-xl mb-10 leading-relaxed animate-fade-in-up"
+          className="font-playfair italic text-base md:text-xl lg:text-2xl max-w-xl mb-8 md:mb-10 leading-relaxed animate-fade-in-up"
           style={{ color: '#7a3b5e', animationDelay: '0.55s' }}
         >
           To the teacher who made every lesson feel like magic,
@@ -194,7 +194,7 @@ export default function HeroSection() {
 
         {/* Year stamp */}
         <p
-          className="font-poppins text-xs tracking-[0.25em] uppercase text-pink-400/40 mt-16 animate-fade-in"
+          className="font-poppins text-xs tracking-[0.25em] uppercase text-pink-400/40 mt-10 md:mt-16 animate-fade-in"
           style={{ animationDelay: '1.4s' }}
         >
           2026 · Celebrating teachers everywhere

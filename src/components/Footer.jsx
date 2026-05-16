@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="relative pt-28 pb-16 px-8 md:px-16 overflow-hidden"
+      className="relative pt-20 md:pt-28 pb-12 md:pb-16 px-6 md:px-16 overflow-hidden"
       style={{ background: '#6d1b3e', zIndex: 2 }}
     >
       <WaveTop />
@@ -99,7 +99,7 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div
-          className="flex items-end justify-between mt-20 pt-6 animate-fade-in delay-500"
+          className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mt-12 md:mt-20 pt-6 animate-fade-in delay-500"
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
         >
           <p className="font-poppins text-[11px] text-white/20 tracking-wide">

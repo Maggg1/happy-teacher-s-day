@@ -88,7 +88,7 @@ export default function QuoteCards() {
   return (
     <section
       id="quotes"
-      className="relative py-24 px-6 overflow-hidden"
+      className="relative py-16 md:py-24 px-5 md:px-6 overflow-hidden"
       style={{ background: '#fdfbf7', zIndex: 2 }}
     >
       {/* Dot grid background */}
@@ -97,7 +97,7 @@ export default function QuoteCards() {
       <div className="relative max-w-5xl mx-auto" style={{ zIndex: 5 }}>
 
         {/* Header */}
-        <div className="mb-14">
+        <div className="mb-8 md:mb-14">
           <p className="font-poppins text-xs tracking-[0.35em] uppercase text-pink-500/60 mb-3 animate-fade-in">
             Words worth keeping
           </p>

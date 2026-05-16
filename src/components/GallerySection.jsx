@@ -67,13 +67,13 @@ export default function GallerySection() {
   return (
     <section
       id="gallery"
-      className="relative py-24 px-6 overflow-hidden"
+      className="relative py-16 md:py-24 px-5 md:px-6 overflow-hidden"
       style={{ background: '#fdf5f9', zIndex: 2 }}
     >
       <div className="relative max-w-4xl mx-auto" style={{ zIndex: 5 }}>
 
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-8 md:mb-12">
           <p className="font-poppins text-xs tracking-[0.35em] uppercase text-pink-500/60 mb-3 animate-fade-in">
             moments worth keeping
           </p>
@@ -102,7 +102,7 @@ export default function GallerySection() {
         </div>
 
         {/* ── Mobile: simple 2-col grid ── */}
-        <div className="grid grid-cols-2 gap-3 md:hidden animate-fade-in delay-200">
+        <div className="grid grid-cols-2 gap-4 md:hidden animate-fade-in delay-200">
           {PHOTOS.map((p, i) => (
             <div
               key={i}

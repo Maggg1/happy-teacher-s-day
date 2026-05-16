@@ -289,6 +289,17 @@ body {
   transform: translateX(5px);
 }
 
+/* ── Mobile overrides ──────────────────────────── */
+@media (max-width: 640px) {
+  .letter-card .drop-cap::first-letter {
+    font-size: 3.2rem;
+    line-height: 0.82;
+  }
+  .sticky-note:hover {
+    transform: rotate(0deg) translateY(-6px) !important;
+  }
+}
+
 /* ── Scrollbar ─────────────────────────────────── */
 ::-webkit-scrollbar       { width: 7px; }
 ::-webkit-scrollbar-track { background: #fdf5f8; }

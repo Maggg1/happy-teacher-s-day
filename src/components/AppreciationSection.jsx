@@ -53,16 +53,18 @@ export default function AppreciationSection() {
   return (
     <section
       id="appreciation"
-      className="relative py-24 px-8 md:px-14 lg:px-20 overflow-hidden"
+      className="relative py-16 md:py-24 px-5 md:px-14 lg:px-20 overflow-hidden"
       style={{ background: '#fff9f4', zIndex: 2 }}
     >
-      {/* Sprig decorations */}
-      <FloralSprig style={{ top: '6%',  left: '2%',  animationDelay: '0s'   }} />
-      <FloralSprig style={{ top: '6%',  right: '2%', animationDelay: '0.8s' }} />
-      <FloralSprig style={{ bottom: '4%', left: '5%', animationDelay: '0.4s', transform: 'scaleX(-1)' }} />
-      <FloralSprig style={{ bottom: '4%', right: '5%',animationDelay: '1.2s' }} />
+      {/* Sprig decorations — desktop only so they don't overlap text on mobile */}
+      <div className="hidden md:block">
+        <FloralSprig style={{ top: '6%',  left: '2%',  animationDelay: '0s'   }} />
+        <FloralSprig style={{ top: '6%',  right: '2%', animationDelay: '0.8s' }} />
+        <FloralSprig style={{ bottom: '4%', left: '5%', animationDelay: '0.4s', transform: 'scaleX(-1)' }} />
+        <FloralSprig style={{ bottom: '4%', right: '5%',animationDelay: '1.2s' }} />
+      </div>
 
-      <div className="relative max-w-6xl mx-auto px-2 md:px-8 lg:px-14" style={{ zIndex: 5 }}>
+      <div className="relative max-w-6xl mx-auto px-0 md:px-8 lg:px-14" style={{ zIndex: 5 }}>
 
         {/* Section label */}
         <div className="flex items-center gap-3 mb-8 animate-fade-in">
