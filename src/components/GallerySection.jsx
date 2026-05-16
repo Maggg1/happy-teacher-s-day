@@ -1,24 +1,26 @@
 /* ── Gallery Section — scattered photos on a surface ────────────────────── */
 import { useState } from 'react'
 
+const base = import.meta.env.BASE_URL
+
 const PHOTOS = [
-  { src: '/p1.jpg', alt: 'always smiling',
+  { src: `${base}p1.jpg`, alt: 'always smiling',
     rotate: '-5deg',
     style: { top: '5%',    left: '0%',   width: '46%' },
     z: 2 },
-  { src: '/p2.jpg', alt: 'Oct 9, 2024',
+  { src: `${base}p2.jpg`, alt: 'Oct 9, 2024',
     rotate: '3.5deg',
     style: { top: '2%',    right: '1%',  width: '40%' },
     z: 1 },
-  { src: '/p3.jpg', alt: 'together',
+  { src: `${base}p3.jpg`, alt: 'together',
     rotate: '-2deg',
     style: { top: '32%',   left: '28%',  width: '42%' },
     z: 3 },
-  { src: '/p4.jpg', alt: 'our little family',
+  { src: `${base}p4.jpg`, alt: 'our little family',
     rotate: '5deg',
     style: { bottom: '2%', left: '4%',   width: '37%' },
     z: 2 },
-  { src: '/p5.jpg', alt: 'thank you',
+  { src: `${base}p5.jpg`, alt: 'thank you',
     rotate: '-4deg',
     style: { bottom: '1%', right: '2%',  width: '40%' },
     z: 1 },

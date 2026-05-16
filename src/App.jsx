@@ -1,6 +1,5 @@
 import FloatingPetals    from './components/FloatingPetals'
 import HeroSection       from './components/HeroSection'
-import JellySection      from './components/JellySection'
 import AppreciationSection from './components/AppreciationSection'
 import QuoteCards        from './components/QuoteCards'
 import GallerySection    from './components/GallerySection'
@@ -12,7 +11,6 @@ export default function App() {
       <FloatingPetals />
       <main>
         <HeroSection />
-        <JellySection />
         <AppreciationSection />
         <QuoteCards />
         <GallerySection />
