@@ -101,32 +101,47 @@ export default function GallerySection() {
           ))}
         </div>
 
-        {/* ── Mobile: simple 2-col grid ── */}
-        <div className="grid grid-cols-2 gap-4 md:hidden animate-fade-in delay-200">
+        {/* ── Mobile: polaroid layout — first photo full-width, rest in pairs ── */}
+        <div className="grid grid-cols-2 gap-5 md:hidden animate-fade-in delay-200">
           {PHOTOS.map((p, i) => (
             <div
               key={i}
+              className={i === 0 ? 'col-span-2' : ''}
               style={{
-                lineHeight: 0,
-                boxShadow: '2px 3px 10px rgba(0,0,0,0.13)',
+                background: '#fff',
+                padding: '8px 8px 36px',
+                boxShadow: '2px 4px 16px rgba(0,0,0,0.13)',
                 transform: `rotate(${p.rotate})`,
-                border: '5px solid #fff',
+                lineHeight: 0,
               }}
             >
               <img
                 src={p.src}
                 alt={p.alt}
-                style={{ width: '100%', height: 'auto', display: 'block' }}
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
                 loading="lazy"
                 draggable={false}
               />
+              <p
+                style={{
+                  fontFamily: "'Dancing Script', cursive",
+                  fontSize: i === 0 ? '0.95rem' : '0.78rem',
+                  color: '#be185d',
+                  textAlign: 'center',
+                  lineHeight: 1,
+                  paddingTop: '10px',
+                  letterSpacing: '0.02em',
+                }}
+              >
+                {p.alt}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Footer note */}
         <p
-          className="text-center font-dancing mt-16 animate-fade-in delay-500"
+          className="text-center font-dancing mt-12 md:mt-16 animate-fade-in delay-500"
           style={{ fontSize: 'clamp(1.2rem, 3.5vw, 1.6rem)', color: '#be185d' }}
         >
           Every photo a reminder — we were lucky to have you. 🌷
